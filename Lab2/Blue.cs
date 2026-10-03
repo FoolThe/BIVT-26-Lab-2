@@ -14,9 +14,11 @@ namespace Lab2
             double answer = 0;
 
             // code here
+            double w = 1;
             for(int i = 1; i < n+1; i++)
             {
-                answer = answer + Math.Sin(i * x) / Math.Pow(x, i - 1);
+                answer = answer + Math.Sin(i * x) / w;
+                w *= x;
             }
             // end
 
